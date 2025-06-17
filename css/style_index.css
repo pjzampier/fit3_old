@@ -1,0 +1,278 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff url("../image/bg_index.png") repeat-x;
+    font-family: ubuntu, arial;
+}
+body {
+    display: none;
+}
+
+/*################ link menu cima ######*/
+a.padrao {
+    text-decoration: none;
+    color: #444444;
+    font-family: arial black;
+    font-size: 25px;
+    background-color: #FFF;
+    border: #00aa00;
+    /* bordas aredondadas*/
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+a.padrao:hover {
+    text-decoration: none;
+    color: #32CD32;
+    font-family: arial black;
+    font-size: 25px;
+
+    /* bordas aredondadas*/
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    /* mundança cor lenta */
+    -o-transition: color .5s ease-in;
+    -ms-transition: color .5s ease-in;
+    -moz-transition: color .5s ease-in;
+    -webkit-transition: color .5s ease-in;
+    transition: color .5s ease-in;
+
+
+}
+
+
+#full {
+    position: center;
+
+    margin: 0 auto;
+    /*centralizando o conteúdo no navegador*/
+    max-width: 1200px;
+    /*largura do layout*/
+    border: 0px solid purple;
+
+}
+
+#banner {
+
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+    border: 0px solid blue;
+    z-index: 10;
+
+
+
+}
+
+#footer {
+    background-color: #FFF;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    color: #00aa00;
+    border: 1px solid #FFF;
+}
+
+/*
+########### Começo desktop ##############
+
+min-width */
+@media screen and (min-width: 600px) {
+
+    .logo {
+        background-image: url("../image/logo.png");
+        background-repeat: no-repeat;
+        margin-top: 12px;
+        margin-left: 200px;
+        float: left;
+        width: 165px;
+        height: 30px;
+        border: 0px solid red;
+
+    }
+
+    #banner_2 {
+        color: #FFF;
+        font-family: ubuntu, arial black;
+        font-size: 50px;
+        text-align: center;
+
+        margin-top: 60px;
+        margin-left: 0px;
+        float: left;
+        max-width: 1200px;
+        width: 99%;
+        height: 70px;
+        border: 0px solid red;
+
+        z-index: 0;
+    }
+
+
+    .formulario {
+        background-color: #FFF;
+        position: center;
+        margin: 0 auto;
+        /*centralizando o conteúdo no navegador*/
+        margin-top: 100px;
+        float: center;
+        width: 500;
+        height: 300px;
+        border: 0px solid green;
+        z-index: 0;
+
+        /* bordas aredondadas*/
+
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border-radius: 7px;
+        /*  sombreamento */
+        box-shadow: #999 1px 1px 7px;
+
+    }
+
+    input.inicial {
+        margin-top: 5px;
+        margin-left: 25px;
+        float: left;
+
+        color: #222;
+        font-family: arial black;
+        font-size: 25px;
+        background-color: #FFF;
+        width: 90%;
+        height: 70px;
+        border: 3px solid #628de9;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*  sombreamento */
+        box-shadow: #999 1px 1px 7px;
+
+    }
+
+    /***botao***/
+    input#botao {
+        cursor: pointer;
+        /*força a mudança cursor*/
+        margin-top: 15px;
+        margin-left: 30px;
+        float: left;
+
+        height: 50px;
+        border: 1px solid #FFF;
+        color: #FFF;
+        font-size: 25px;
+        font-family:  ubuntu;
+        font-weight: bold;
+        background-color: #5ba2f3;
+        border: 2px solid #FFF;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+
+        /*  sombreamento */
+        box-shadow: #999 2px 2px 7px;
+
+    }
+
+    input#botao:hover,
+    input#botao:focus {
+        background-color: rgb(26, 29, 230);
+        /*reduce the drop shadow size to give a pushed button effect*/
+        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+        box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    }
+
+
+    span.inicial {
+        margin-top: 15px;
+        margin-left: 30px;
+        float: left;
+
+        color: #FFF;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+
+    }
+
+    #center_primeiro {
+        background-image: url(".../images/banner_primeiro.png");
+        background-repeat: no-repeat;
+        margin-top: 0px;
+        margin-left: 0px;
+        float: left;
+        width: 99%;
+        height: 600px;
+        border: 0px solid red;
+        z-index: 0;
+    }
+
+    #center_segundo {
+        background-image: url(".../images/banner_segundo.png");
+        background-repeat: no-repeat;
+        position: relative;
+        margin: 0px auto;
+        overflow: hidden;
+        width: 99%;
+        height: 500px;
+        border: 0px solid red;
+        z-index: 0;
+    }
+
+    #center_terceiro {
+        background-image: url(".../images/banner_terceiro.png");
+        background-repeat: no-repeat;
+        position: relative;
+        margin: 0px auto;
+        overflow: hidden;
+        width: 99%;
+        height: 500px;
+        border: 0px solid red;
+        z-index: 0;
+    }
+
+
+    #center_quarto {
+        background-image: url(".../images/banner_quarto.png");
+        background-repeat: no-repeat;
+        position: relative;
+        margin: 0px auto;
+        overflow: hidden;
+        width: 99%;
+        height: 500px;
+        border: 0px solid red;
+        z-index: 0;
+    }
+
+
+
+}
+
+/*##########  Fim desktop  #############*/
+
+
+
+/*##########  começo mobile  #############*/
+
+/* max-width */
+@media screen and (max-width: 600px) {}

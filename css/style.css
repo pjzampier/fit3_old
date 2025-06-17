@@ -1,0 +1,814 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /*background:#ffffff url("image/bg.png") repeat-x;*/
+    background-color: #F5F5F5;
+    font-family: ubuntu, arial;
+}
+
+body {
+    display: none;
+}
+
+td {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*################ link menu cima ######*/
+a.padrao {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+a.padrao:hover {
+    text-decoration: none;
+    color: #1E90FF;
+    font-size: 16px;
+
+    /* bordas aredondadas*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /* mundança cor lenta */
+    -o-transition: color .5s ease-in;
+    -ms-transition: color .5s ease-in;
+    -moz-transition: color .5s ease-in;
+    -webkit-transition: color .5s ease-in;
+    transition: color .5s ease-in;
+}
+
+.menu_interno {
+    margin-top: 10px;
+    margin-left: 25px;
+    float: left;
+    max-width: 55%;
+
+    /* bordas aredondadas*/
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    border: 0px solid red;
+}
+
+a.paginacao {
+    text-decoration: none;
+    color: #FFF;
+    font-family: ubuntu, arial;
+}
+
+a.paginacao:hover {
+    text-decoration: line;
+    color: #32CD32;
+    font-family: ubuntu, arial;
+}
+
+hr.linha {
+    border: 0px;
+    height: 0px;
+    box-shadow: 0 0 10px 1px black;
+}
+
+hr.linha:after {
+    /* Not really supposed to work, but does */
+    content: "\00a0";
+    /* Prevent margin collapse */
+}
+
+#full {
+    /*   position: relative;*/
+    overflow: hidden;
+    margin: 0 auto;
+    /*centralizando o conteúdo no navegador*/
+    max-width: 1200px;
+    /*largura do layout*/
+    border: 0px solid red;
+}
+
+#banner {
+    background-color: #070253;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border: 1px solid blue;
+    z-index: 10;
+
+    /*  sombreamento */
+    box-shadow: #777 0px 2px 7px;
+    /* 
+    position:fixed;background:#fff4c8;border:1px solid #ffcc00;left:auto;width:150px;right:10px;
+    display:block;margin:0 0.5em;
+    */
+}
+
+#banner_fundo {
+    position: relative;
+    margin: 0 auto;
+    /*centralizando o conteúdo no navegador*/
+    overflow: hidden;
+    max-width: 1200px;
+    /*largura do layout*/
+    height: 60px;
+    border: 1px solid purple;
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .logo {
+        background-image: url("image/logo.png");
+        background-repeat: no-repeat;
+        margin-top: 12px;
+        margin-left: 200px;
+        float: left;
+        width: 150px;
+        height: 45px;
+        border: 0px solid red;
+
+    }
+
+    input.padrao {
+        margin-top: 3px;
+        font-style: italic;
+        color: #222;
+        font-family: ubuntu, arial;
+        font-size: 20px;
+        background-color: #FFF;
+        width: 275px;
+        height: 50px;
+        border: 2px solid #455eeb;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*  sombreamento     
+        box-shadow: #999 1px 1px 7px;
+        */
+    }
+
+    input.padrao {
+        /*  sombreamento*/
+        box-shadow: #999 1px 1px 7px;
+
+
+    }
+
+    textarea.padrao {
+        margin-top: 3px;
+        font-style: italic;
+        color: #222;
+        font-family: ubuntu, arial;
+        font-size: 20px;
+        background-color: #FFF;
+        width: 275px;
+        height: 150px;
+        border: 2px solid #4450ee;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .org_input {
+        padding: 8px;
+        margin-top: 0px;
+        margin-left: 0px;
+        float: left;
+        width: 270px;
+        border: 0px solid red;
+    }
+
+    .org_unico {
+        padding: 8px;
+        margin-top: 0px;
+        margin-left: 10px;
+        float: left;
+        width: 158px;
+        color: #EE0000;
+        border: 1px solid rgb(199, 24, 12);
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .org_unico_ {
+        padding: 8px;
+        margin-top: 0px;
+        margin-left: 10px;
+        float: left;
+        width: 158px;
+        background-repeat: no-repeat;
+        height: 155px;
+        color:#c2980f;
+        border: 0px solid rgb(199, 24, 12);
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .org_diet {
+        padding: 8px;
+        margin-top: 27px;
+        margin-left: px;
+        float: left;
+        width: 140px;
+        font-weight: bold;
+        text-align: center;
+        color: #f5f2f2;
+        border: 0px solid rgb(13, 32, 139);
+
+    }
+
+    .org_center {
+        /*   position: relative;*/
+        overflow: hidden;
+        margin: 0 auto;
+        /*centralizando o conteúdo no navegador*/
+        max-width: 600px;
+        /*largura do layout*/
+        border: 0px solid red;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .org_content {
+        /*   position: relative;*/
+        overflow: hidden;
+        margin: 0 auto;
+        /*centralizando o conteúdo no navegador*/
+        max-width: 250px;
+        /*largura do layout*/
+        border: 0px solid red;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .perfil {
+
+        background-image: url("image/logo.png");
+        background-repeat: no-repeat;
+        /*   position: relative;*/
+        overflow: hidden;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        /*largura do layout*/
+        border: 0px solid red;
+
+    }
+
+
+    select.padrao {
+        margin-top: 3px;
+        font-style: italic;
+        color: #222;
+        font-family: ubuntu, arial;
+        font-size: 20px;
+        background-color: #FFF;
+        width: 275px;
+        height: 50px;
+        border: 2px solid #3b5cee;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*  sombreamento     
+        box-shadow: #999 1px 1px 7px;
+        */
+    }
+
+    /***botao***/
+    input#botao {
+        cursor: pointer;
+        /*força a mudança cursor*/
+
+        margin-top: 29px;
+        margin-left: 25px;
+        float: left;
+        height: 50px;
+        border: 1px solid #FFF;
+        color: #FFF;
+        font-size: 25px;
+        font-family: ubuntu, sans-serif;
+        font-weight: bold;
+        background-color: #4455f0;
+        border: 2px solid #FFF;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+
+        /*  sombreamento */
+        box-shadow: #999 2px 2px 7px;
+    }
+
+    input#botao:hover,
+    input#botao:focus {
+        background-color: #1a00aa;
+        /*reduce the drop shadow size to give a pushed button effect*/
+        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+        box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    }
+
+    .inputDiv {
+        margin-top: 3px;
+        color: #FFF;
+        text-align: center;
+        font-family: ubuntu, arial;
+        font-size: 30px;
+        background-color: #00aa00;
+        width: 275px;
+        height: 50px;
+        border: 2px solid #32CD32;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*  sombreamento     
+        box-shadow: #999 1px 1px 7px;
+        */
+    }
+
+    span.inicial {
+        margin-top: 5px;
+        margin-left: 3px;
+        float: left;
+        color: #666;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: ubuntu, sans-serif;
+    }
+
+    fieldset.padrao {
+        position: relative;
+        margin: 0px auto;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 13px;
+
+        font-family: ubuntu, sans-serif;
+        width: 97%;
+        background-color: #FFF;
+        border: 1px solid #666;
+        z-index: 0;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*  sombreamento */
+        box-shadow: #999 2px 2px 5px;
+    }
+
+    fieldset.padraoCad {
+        position: relative;
+        margin: 0px auto;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 13px;
+
+        font-family: ubuntu, sans-serif;
+        width: 97%;
+        background-color: #FFF;
+        border: 1px solid #666;
+        z-index: 0;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*  sombreamento */
+        box-shadow: #999 2px 2px 5px;
+    }
+
+
+    fieldset.padraoCad2 {
+        position: relative;
+        margin: 0px auto;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 13px;
+
+        font-family: ubuntu, sans-serif;
+        width: 97%;
+        background-color: #FFF;
+        border: 1px solid #666;
+        z-index: 0;
+
+        display: none;
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*  sombreamento */
+        box-shadow: #999 2px 2px 5px;
+    }
+
+    legend.padrao {
+        padding: 2px;
+        font-weight: bold;
+        font-size: 17px;
+        color: #FFF;
+        background-color: #444;
+        border: 1px solid #666;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+
+    }
+
+    .botao_cadastro {
+        cursor: pointer;
+        /*força a mudança cursor*/
+        margin: 5px;
+        margin-left: 3px;
+        float: left;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 17px;
+        color: #FFF;
+        background-color: #32CD32;
+        border: 2px solid #FFF;
+        /* bordas aredondadas*/
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        /*  sombreamento */
+        box-shadow: #999 2px 2px 5px;
+    }
+
+
+    .botao_cadastro:hover {
+        background-color: #00aa00;
+        border: 2px solid #FFF;
+        /*  sombreamento */
+        box-shadow: #FFF 2px 2px 5px;
+    }
+
+    .separador {
+        position: relative;
+        margin: 0px auto;
+        margin-top: 5px;
+        overflow: hidden;
+        width: 100%;
+
+        text-align: center;
+        color: #444;
+        font-weight: bold;
+        font-family: ubuntu, arial;
+        font-size: 17px;
+        border: 1px solid #FFB90F;
+        border-bottom: 0px;
+        z-index: 0;
+    }
+
+    .separador_null {
+        position: relative;
+        margin: 0px auto;
+        margin-top: 0px;
+        overflow: hidden;
+        width: 100%;
+        border: 0px solid #FFB90F;
+        z-index: 0;
+    }
+
+    legend.validacao {
+        padding: 2px;
+        font-weight: normal;
+        font-family: ubuntu, sans-serif;
+        font-size: 12px;
+        color: #00aa00;
+        background-color: #FFF;
+        border: 1px solid #666;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+
+    }
+
+    #center_idetifica {
+        position: relative;
+        margin: 0px auto;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+        font-family: arial;
+        font-size: 17px;
+        background-color: #555;
+        border: 0px solid green;
+        z-index: 0;
+
+    }
+
+    .linha_resultado {
+        position: relative;
+        margin: 0px auto;
+        margin-top: 2px;
+        overflow: hidden;
+        width: 100%;
+
+        text-align: center;
+        color: #444;
+        font-weight: normal;
+        font-family: ubuntu, arial;
+        font-size: 17px;
+        background-color: #FFF;
+        border: 0px solid green;
+        z-index: 0;
+    }
+
+    .linha_resultado:hover {
+        /*  sombreamento */
+        box-shadow: #999 0px 0px 8px;
+
+        border: 1px solid #999;
+
+    }
+
+    .resultado_item {
+        padding: 2px;
+        margin-top: 0px;
+        margin-left: 1px;
+        min-height: 50px;
+        float: left;
+        text-align: center;
+        font-family: ubuntu, arial;
+        font-size: 20px;
+        background-color: #FFF;
+        border: 1px solid #999;
+        z-index: 0;
+    }
+
+    .paginacao_item {
+        padding: 2px;
+        margin-top: 0px;
+        margin-left: 1px;
+        min-height: 30px;
+        min-width: 30px;
+        float: left;
+        text-align: center;
+        font-size: 25px;
+        background-color: #00aa00;
+        border: 0px solid #999;
+        z-index: 0;
+    }
+
+    .resultado_total {
+
+        width: 26%;
+        float: right;
+        margin-right: 3%;
+        color: #FFF;
+        font-weight: bold;
+        padding: 2px;
+        margin-top: 0px;
+        margin-left: 1px;
+        min-height: 50px;
+        text-align: center;
+        font-family: ubuntu, arial;
+        font-size: 20px;
+        background-color: #FFF;
+        border: 1px solid #FFF;
+        z-index: 0;
+    }
+
+    .sair {
+        padding-top: 0px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 3px;
+        margin-top: 5px;
+        margin-left: 30px;
+        float: left;
+        width: 15px;
+        height: 15px;
+
+        text-align: center;
+        text-decoration: none;
+        color: #FFF;
+        font-weight: bold;
+        font-family: ubuntu, arial;
+        font-size: 13px;
+        background-color: rgb(24, 4, 209);
+        border: 1px solid #FFF;
+
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+
+    .sair:hover {
+
+        background-color: #bd0404;
+        /*  sombreamento */
+        box-shadow: #999 0px 0px 8px;
+
+
+    }
+
+    .botao_editar {
+        background-color: #0824a1;
+        cursor: pointer;
+        /*força a mudança cursor*/
+
+        padding: 3px;
+        margin-top: 0px;
+        margin-right: 3px;
+        float: right;
+        border: 1px solid #3f8ee9;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border-radius: 7px;
+    }
+
+    .botao_editar:hover {
+        /*  sombreamento */
+        box-shadow: rgb(155, 141, 134) 0px 0px 8px;
+    }
+
+    .botao_excluir {
+        cursor: pointer;
+        /*força a mudança cursor*/
+
+        padding: 3px;
+        margin-top: 5px;
+        margin-right: 10px;
+        float: right;
+        border: 0px solid #999;
+    }
+
+    .botao_excluir:hover {
+        /*  sombreamento */
+        box-shadow: rgb(61, 88, 245) 0px 0px 8px;
+    }
+
+    .calculos {
+        background-color: #222;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 90px;
+        font-size: 13px;
+        text-align: center;
+        color: #00aa00;
+        border-top: 1px solid #FFF;
+    }
+
+    .calculos_resultado {
+        margin-top: 3px;
+        margin-left: 30px;
+        float: left;
+        font-style: italic;
+        color: #222;
+        text-align: center;
+        font-weight: bold;
+        font-family: ubuntu, arial;
+        font-size: 25px;
+        background-color: #FFF;
+        width: 215px;
+        height: 60px;
+        border: 2px solid #FFB90F;
+
+        /* bordas aredondadas*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        /*  sombreamento     
+        box-shadow: #999 1px 1px 7px;
+        */
+    }
+
+    #footer {
+        background-color: #FFF;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20px;
+        font-size: 13px;
+        text-align: center;
+        color: #00aa00;
+        border-top: 1px solid #00aa00;
+    }
+
+    /* Menu DropDown */
+
+    /* General */
+    #cssdropdown,
+    #cssdropdown ul {
+        list-style: none;
+    }
+
+    #cssdropdown,
+    #cssdropdown * {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Head links */
+    #cssdropdown li.headlink {
+        width: 10%;
+        float: left;
+        margin-left: -1px;
+        border: 0px solid green;
+        text-align: center;
+
+    }
+
+    #cssdropdown li.headlink a {
+        display: block;
+        padding: 15px;
+    }
+
+    /* Child lists and links */
+    #cssdropdown li.headlink ul {
+        display: none;
+        border-top: 2px #32CD32 solid;
+        text-align: left;
+        font-size: 13px;
+        width: 180px;
+    }
+
+
+    #cssdropdown li.headlink:hover ul {
+        display: block;
+    }
+
+    #cssdropdown li.headlink ul li a {
+        padding: 5px;
+        height: 17px;
+    }
+
+    #cssdropdown li.headlink ul li a:hover {
+        background-color: #32CD32;
+    }
+
+    /* Pretty styling 
+    body { font-family: verdana, arial, sans-serif; font-size: 0.8em; background-color: red; }*/
+
+    #cssdropdown a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    #cssdropdown ul li a:hover {
+        text-decoration: none;
+    }
+
+    /*#cssdropdown li.headlink { background-color: white; background-image: url(bg.gif); }*/
+    /*#cssdropdown li.headlink { background-color: white; background-color: green; }*/
+
+    #cssdropdown li.headlink ul {
+        background-color: green;
+        background-position: bottom;
+    }
+
+
+
+}
+
+/*##########  Fim desktop  #############*/
+
+
+
+/*##########  começo mobile  #############*/
+
+/* max-width /@media screen and (max-width: 600px) {} */
